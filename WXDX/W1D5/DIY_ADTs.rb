@@ -58,11 +58,11 @@ class Map
 
 end
 
-map = Map.new([["a", 1], ["b", 2], ["c", 3]])
-p map.lookup("a")
-p map.show
-map.remove("b")
-p map.show
-map.assign("c", 5)
-map.assign("d", 6)
-p map.show
+# map = Map.new([["a", 1], ["b", 2], ["c", 3]])
+# p map.lookup("a")
+# p map.show
+# map.remove("b")
+# p map.show
+# map.assign("c", 5)
+# map.assign("d", 6)
+# p map.show
