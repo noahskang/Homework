@@ -14,8 +14,10 @@ class House < ActiveRecord::Base
 
   def n_plus_one_seeds
     plants = self.plants
+    # gives us a relation pointing to Plants table
     seeds = []
     plants.each do |plant|
+      # for each plant, add the seeds...
       seeds << plant.seeds
     end
 
@@ -23,6 +25,12 @@ class House < ActiveRecord::Base
   end
 
   def better_seeds_query
-    # TODO: your code here
+    # TODO:
+    plants = self.plants.join(:all_seeds)
+    seeds = []
+
+    plants.each do |plant|
+      seed << plants.seeds
+    end
   end
 end

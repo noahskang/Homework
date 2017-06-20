@@ -12,4 +12,6 @@ class Gardener < ActiveRecord::Base
     foreign_key: :gardener_id,
     primary_key: :id
   )
+
+  
 end
