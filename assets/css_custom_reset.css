@@ -1,0 +1,35 @@
+/*browser has built in stylesheets.
+you can normalize your CSS by having defaults...
+OR you can have everything styled styled by you, rather than being browser sensitive.
+You want to set sensible defaults on reset.
+if you want something shared on whole document, put it on body and override as you need on inner elements.*/
+
+html, body, div, span, h1, h2, h3, h4, a, ol, ul, li, form, label, article, aside, figure, figcaption, footer, header, nav{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body{
+  line-height: 1.5;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+input[type="radio"], select, input[type="submit"]{
+  cursor: pointer;
+  outline: none;
+}
+
+h2 + .user_review {
+  border-top: 1px solid black;
+}
+
+img{
+  width: 100%;
+}
